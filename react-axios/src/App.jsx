@@ -1,9 +1,14 @@
+import { Outlet } from "react-router-dom"
+import Navbar from "./components/Navbar"
 
 function App() {
 
   return (
     <div className="App">
-      <h1>Rect axios</h1>
+      <Navbar/>
+      <div className="container">
+        <Outlet/>
+      </div>
     </div>
   )
 }
