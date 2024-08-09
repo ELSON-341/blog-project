@@ -1,4 +1,5 @@
 import axios from 'axios'
+import postFetch from '../axios/config'
 
 import { useState, useEffect } from "react"
 
@@ -11,7 +12,7 @@ const Home = () => {
 
   const getPosts = async() => {
     try {
-      const response = await axios.get('https://jsonplaceholder.typicode.com/posts')
+      const response = await postFetch.get('/posts')
 
       const data = response.data
       
