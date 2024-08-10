@@ -5,8 +5,11 @@ import './index.css'
 
 import {createBrowserRouter, RouterProvider, Route} from 'react-router-dom'
 
+// páginas
 import Home from './router/Home.jsx'
 import NewPost from './router/NewPost.jsx'
+import Post from './router/Post.jsx'
+
 const router = createBrowserRouter([
   {
     element: <App/>,
@@ -18,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: '/new',
         element: <NewPost/>
+      },
+      {
+        path: '/posts/:id',
+        element: <Post/>
       }
     ]
   }
