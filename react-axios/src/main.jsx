@@ -9,6 +9,7 @@ import {createBrowserRouter, RouterProvider, Route} from 'react-router-dom'
 import Home from './router/Home.jsx'
 import NewPost from './router/NewPost.jsx'
 import Post from './router/Post.jsx'
+import Admin from './router/Admin.jsx'
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,11 @@ const router = createBrowserRouter([
       {
         path: '/posts/:id',
         element: <Post/>
-      }
+      },
+      {
+        path: '/admin',
+        element: <Admin/>
+      },
     ]
   }
 ])
