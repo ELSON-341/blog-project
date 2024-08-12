@@ -10,6 +10,7 @@ import Home from './router/Home.jsx'
 import NewPost from './router/NewPost.jsx'
 import Post from './router/Post.jsx'
 import Admin from './router/Admin.jsx'
+import EditPost from './router/EditPost.jsx'
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: '/admin',
         element: <Admin/>
+      },
+      {
+        path: '/posts/edit/:id',
+        element: <EditPost/>
       },
     ]
   }
