@@ -13,7 +13,6 @@ const EditPost = () => {
 
   const getPost = async() => {
     try {
-      console.log(id);
       const reponse = await blogFetch.get(`/posts/${id}`)
 
       const data = reponse.data
@@ -22,7 +21,6 @@ const EditPost = () => {
       setBody(data.body)
     } catch (error) {
       console.log(error);
-      
     }
   }
 

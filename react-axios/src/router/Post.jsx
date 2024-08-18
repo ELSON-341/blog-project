@@ -11,6 +11,9 @@ const Post = () => {
 
   const {id} = useParams()
 
+  console.log(id);
+  
+
   const getPost = async() => {
     try {
       console.log(id);
@@ -20,7 +23,6 @@ const Post = () => {
       setPost(data)
     } catch (error) {
       console.log(error);
-      
     }
   }
 
